@@ -10,21 +10,21 @@ describe ("Translate single letters to morse code", () => {
     const result = translate("a");
     expect(result).toBe(".-");
   })
-  it("should translate b to -...", () => {
-    const result = translate("b");
-    expect(result).toBe("-...");
-  })
-  it("should translate c to -.-.", () => {
-    const result = translate("c");
-    expect(result).toBe("-.-.");
-  })
-  it("should translate d to -..", () => {
-    const result = translate("d");
-    expect(result).toBe("-..");
-  })
   it("should translate e to .", () => {
     const result = translate("e");
     expect(result).toBe(".");
+  })
+  it("should translate m to --", () => {
+    const result = translate("m");
+    expect(result).toBe("--");
+  })
+  it("should translate o to ---", () => {
+    const result = translate("o");
+    expect(result).toBe("---");
+  })
+  it("should translate v to ...-", () => {
+    const result = translate("v");
+    expect(result).toBe("...-");
   })
 })
 
