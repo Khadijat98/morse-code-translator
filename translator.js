@@ -1,65 +1,65 @@
 // break word into letters
-// for each word find the translation
-// string the words back together
-export const translateWord = (word) => {
-  let wordArr = word.split("");
+// for each letter find the translation
+// string the letters back together
+export const translateEnglishToMorse = (english) => {
+  let englishArr = english.split("");
 
-  let morse = wordArr.map((letter) => {
-    if (letter === "a") {
+  let morseTranslation = englishArr.map((englishLetter) => {
+    if (englishLetter === "a") {
       return ".-";
-    } else if (letter === "b") {
+    } else if (englishLetter === "b") {
       return "-...";
-    } else if (letter === "c") {
+    } else if (englishLetter === "c") {
       return "-.-.";
-    } else if (letter === "d") {
+    } else if (englishLetter === "d") {
       return "-..";
-    } else if (letter === "e") {
+    } else if (englishLetter === "e") {
       return ".";
-    } else if (letter === "f") {
+    } else if (englishLetter === "f") {
       return "..-.";
-    } else if (letter === "g") {
+    } else if (englishLetter === "g") {
       return "--.";
-    } else if (letter === "h") {
+    } else if (englishLetter === "h") {
       return "....";
-    } else if (letter === "i") {
+    } else if (englishLetter === "i") {
       return "..";
-    } else if (letter === "j") {
+    } else if (englishLetter === "j") {
       return ".---";
-    } else if (letter === "k") {
+    } else if (englishLetter === "k") {
       return "-.-";
-    } else if (letter === "l") {
+    } else if (englishLetter === "l") {
       return ".-..";
-    } else if (letter === "m") {
+    } else if (englishLetter === "m") {
       return "--";
-    } else if (letter === "n") {
+    } else if (englishLetter === "n") {
       return "-.";
-    } else if (letter === "o") {
+    } else if (englishLetter === "o") {
       return "---";
-    } else if (letter === "p") {
+    } else if (englishLetter === "p") {
       return ".--.";
-    } else if (letter === "q") {
+    } else if (englishLetter === "q") {
       return "--.-";
-    } else if (letter === "r") {
+    } else if (englishLetter === "r") {
       return ".-.";
-    } else if (letter === "s") {
+    } else if (englishLetter === "s") {
       return "...";
-    } else if (letter === "t") {
+    } else if (englishLetter === "t") {
       return "-";
-    } else if (letter === "u") {
+    } else if (englishLetter === "u") {
       return "..-";
-    } else if (letter === "v") {
+    } else if (englishLetter === "v") {
       return "...-";
-    } else if (letter === "w") {
+    } else if (englishLetter === "w") {
       return ".--";
-    } else if (letter === "x") {
+    } else if (englishLetter === "x") {
       return "-..-";
-    } else if (letter === "y") {
+    } else if (englishLetter === "y") {
       return "-.--";
-    } else if (letter === "z") {
+    } else if (englishLetter === "z") {
       return "--..";
     }
   })
 
-  return morse.join(" ");
+  return morseTranslation.join(" ");
     
 }

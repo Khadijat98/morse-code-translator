@@ -1,29 +1,29 @@
 // Need to translate english into morse code
 
 import {it, expect, describe} from "@jest/globals"
-import {translateWord} from "./translator.js"
+import {translateEnglishToMorse} from "./translator.js"
 
 // Start by translating letters (priority)
 // Describe block for the letters to group them together
 describe ("Translate single letters to morse code", () => {
   it("should translate a to .-", () => {
-    const result = translateWord("a");
+    const result = translateEnglishToMorse("a");
     expect(result).toBe(".-");
   })
   it("should translate e to .", () => {
-    const result = translateWord("e");
+    const result = translateEnglishToMorse("e");
     expect(result).toBe(".");
   })
   it("should translate m to --", () => {
-    const result = translateWord("m");
+    const result = translateEnglishToMorse("m");
     expect(result).toBe("--");
   })
   it("should translate o to ---", () => {
-    const result = translateWord("o");
+    const result = translateEnglishToMorse("o");
     expect(result).toBe("---");
   })
   it("should translate v to ...-", () => {
-    const result = translateWord("v");
+    const result = translateEnglishToMorse("v");
     expect(result).toBe("...-");
   })
 })
@@ -32,12 +32,12 @@ describe ("Translate single letters to morse code", () => {
 // Describe block for short words
 describe ("Translate short words to morse code", () => {
   it("should translate hello into .... . .-.. .-.. ---", () => {
-    const result = translateWord("hello");
+    const result = translateEnglishToMorse("hello");
     expect(result).toBe(".... . .-.. .-.. ---");
   })
 
   it("should translate bye into -... -.-- .", () => {
-    const result = translateWord("bye");
+    const result = translateEnglishToMorse("bye");
     expect(result).toBe("-... -.-- .");
   })
 })
