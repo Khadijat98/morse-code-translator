@@ -1,0 +1,22 @@
+.page-title {
+  text-align: center;
+  margin: 100px;
+}
+
+.translation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.page-title {
+  font-family: "Share Tech Mono", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
