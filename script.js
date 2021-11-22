@@ -1,14 +1,11 @@
-import { translateEnglishToMorse } from "./translator";
+import { translateEnglishToMorse } from "./translator.js";
 
+const inputEnglishWord = document.querySelector(".english-word");
+const submitEnglishWord = document.querySelector(".submit-btn");
+const receiveMorseTranslation = document.querySelector(".morse-translation");
 
-// User enters english word into input box
-// User presses submit, translation is processed
-// User receives translation on page
-
-const submitWord = document.querySelector(".submit-btn");
-const receiveTranslation = document.querySelector(".morse-translation");
-
-submitWord.addEventListener("click", () => {
-  translateWord(word);
-  receiveTranslation
+submitEnglishWord.addEventListener("click", () => {
+  const englishInput = inputEnglishWord.value;
+  const morseTranslation = translateEnglishToMorse(englishInput);
+  receiveMorseTranslation.innerHTML=`${morseTranslation}`;
 })
