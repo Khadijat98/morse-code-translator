@@ -47,3 +47,25 @@ describe ("Translate phrases to morse code", () => {
     expect(result).toBe(".. / .-.. --- ...- . / -.-- --- ..-");
   })
 })
+
+describe ("Translate punctuation to morse code", () => {
+  it("should translate . to .-.-.-", () => {
+    const result = translateEnglishToMorse(".");
+    expect(result).toBe(".-.-.-");
+  })
+  it("should translate , to --..--", () => {
+    const result = translateEnglishToMorse(",");
+    expect(result).toBe("--..--");
+  })
+  it("should translate : to ---...", () => {
+    const result = translateEnglishToMorse(":");
+    expect(result).toBe("---...");
+  })
+})
+
+describe ("Translate invalid symbols to invalid", () => {
+  it("should translate ! to invalid input", () => {
+    const result = translateEnglishToMorse("!");
+    expect(result).toBe("invalid input");
+  })
+})

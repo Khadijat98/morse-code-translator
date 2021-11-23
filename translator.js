@@ -56,6 +56,26 @@ export const translateEnglishToMorse = (english) => {
       return "--..";
     } else if (englishLetter === " ") {
       return "/";
+    } else if (englishLetter === ".") {
+      return ".-.-.-";
+    } else if (englishLetter === ",") {
+      return "--..--";
+    } else if (englishLetter === "?") {
+      return "..--..";
+    } else if (englishLetter === ";") {
+      return "-.-.-.";
+    } else if (englishLetter === ":") {
+      return "---...";
+    } else if (englishLetter === "-") {
+      return "-....-";
+    } else if (englishLetter === "/") {
+      return "-..-.";
+    } else if (englishLetter === "'") {
+      return ".----.";
+    } else if (englishLetter === "\"") {
+      return ".-..-.";
+    } else if (englishLetter === "!") {
+      return "invalid input";
     }
   })
 
