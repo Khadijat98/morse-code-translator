@@ -1,6 +1,3 @@
-// break word into letters
-// for each letter find the translation
-// string the letters back together
 export const translateEnglishToMorse = (english) => {
   let englishArr = english.split("");
 

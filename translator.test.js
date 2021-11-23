@@ -1,10 +1,6 @@
-// Need to translate english into morse code
-
 import {it, expect, describe} from "@jest/globals"
 import {translateEnglishToMorse} from "./translator.js"
 
-// Start by translating letters (priority)
-// Describe block for the letters to group them together
 describe ("Translate single letters to morse code", () => {
   it("should translate a to .-", () => {
     const result = translateEnglishToMorse("a");
@@ -28,9 +24,7 @@ describe ("Translate single letters to morse code", () => {
   })
 })
 
-// Can then try adding some common phrases (short words)
-// Describe block for short words
-describe ("Translate short words to morse code", () => {
+describe ("Translate words to morse code", () => {
   it("should translate hello into .... . .-.. .-.. ---", () => {
     const result = translateEnglishToMorse("hello");
     expect(result).toBe(".... . .-.. .-.. ---");
@@ -41,9 +35,3 @@ describe ("Translate short words to morse code", () => {
     expect(result).toBe("-... -.-- .");
   })
 })
-
-// Maybe add some more complex things like punctuation i.e. invalid inputs (extra)
-// 1. Write tests
-// 2. Create functions for tests
-// 3. Add HTML/SCSS
-// 4. Add DOM elements in JS
