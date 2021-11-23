@@ -35,6 +35,10 @@
   font-size: 15px;
   border: 2px solid $tertiary-colour;
 
+  @media only screen and (min-width: $small-screen) {
+    width: 35vh;
+  }
+
   @media only screen and (min-width: $medium-screen) {
     width: 50vh;
     font-size: 20px;
@@ -47,9 +51,12 @@
 }
 
 .morse-translation {
-  padding: 20px 10px 0px;
-  text-align: center;
+  padding: 20px 5px 0px;
   border: 2px solid $tertiary-colour;
+
+  @media only screen and (min-width: $small-screen) {
+    width: 35vh;
+  }
 
   @media only screen and (min-width: $medium-screen) {
     width: 50vh;

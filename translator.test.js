@@ -35,3 +35,15 @@ describe ("Translate words to morse code", () => {
     expect(result).toBe("-... -.-- .");
   })
 })
+
+describe ("Translate phrases to morse code", () => {
+  it("should translate hello world into.... . .-.. .-.. --- / .-- --- .-. .-.. -..", () => {
+    const result = translateEnglishToMorse("hello world");
+    expect(result).toBe(".... . .-.. .-.. --- / .-- --- .-. .-.. -..");
+  })
+
+  it("should translate i love you into .. / .-.. --- ...- . / -.-- --- ..-", () => {
+    const result = translateEnglishToMorse("i love you");
+    expect(result).toBe(".. / .-.. --- ...- . / -.-- --- ..-");
+  })
+})

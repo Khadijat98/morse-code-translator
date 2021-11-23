@@ -54,6 +54,8 @@ export const translateEnglishToMorse = (english) => {
       return "-.--";
     } else if (englishLetter === "z") {
       return "--..";
+    } else if (englishLetter === " ") {
+      return "/";
     }
   })
 
